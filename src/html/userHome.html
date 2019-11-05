@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户首页</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/userHome.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+    <!--        导航栏上面-->
+    <div class="top">
+        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+        <li>这</li>
+        <li>是</li>
+        <li>我</li>
+        <li>的</li>
+        <li>第</li>
+        <li>一</li>
+        <li>个</li>
+        <li>博</li>
+        <li>客</li>
+    </div>
+    <!--        导航栏-->
+    <header class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 首页</a>
+                        </li>
+                        <li><a href="#">博客</a></li>
+                        <li><a href="#">学院</a></li>
+                        <li><a href="#">下载</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-stopPropagation="true">更多 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">论坛</a></li>
+                                <li><a href="#">图文课</a></li>
+                                <li><a href="#">问答</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">商城</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">活动</a></li>
+                            </ul>
+                        </li>
+<!--                        用户栏存在问题-->
+                        <li class="nav navbar-nav navbar-right">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    <p></p>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#" class="write-blog">写微博</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--        轮播图上面的大标题-->
+    <div class="big-content">
+        <div class="big-title">
+            <div class="title">
+                <h1>业内新闻</h1>
+            </div>
+            <div class="content">
+                <h3>最新的前端业内新闻和资源</h3>
+            </div>
+        </div>
+    </div>
+    <!--        轮播图-->
+    <div class="slider-content">
+        <div class="content">
+            <div class="swiper">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../images/qcon-beijing.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/qcon-beijing.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="../images/qcon-beijing.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-info">
+                <div class="info">
+                    <h2>ABOUT ME</h2>
+                    <h5>PROFESSIONAL IN PHOTOGRAPHY</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed euismod tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat.
+                    </p>
+                    <em>Nulla eget mauris quis elit mollis ornare vitae ut odio. Cras tincidunt, augue vitae sollicitudin commodo, quam elit varius est</em>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--        主要内容区-->
+    <div class="main-content">
+        <div class="main">
+            <!--                左侧内容-->
+            <ul class="left-container">
+<!--                顶部推荐-->
+                <li class="top-news">
+                    <a href="#">您有新的内容推荐，点击查看
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                </li>
+<!--                正式内容区-->
+                <li class="container-box template">
+<!--                    1.标题-->
+                    <div class="title-box">
+                        <a href="#">数据动态过滤技巧在Vue项目中的实践
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </div>
+<!--                    2.内容-->
+                    <article class="article-body">
+                        <section>
+                            前言郑重声明：本文不是Podman的入门篇，入门请阅读这篇文章：再见Docker，是时候拥抱下一代容器工具了
+                        </section>
+                    </article>
+<!--                    3.左侧用户信息，右侧点赞、查看、评论-->
+                    <ul class="container-bottom">
+                        <li class="left-ueser-info">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <span class="user-name"></span>
+                            </a>
+
+                        </li>
+                        <li class="right-user-browse">
+                            <a class="like">
+                                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                <p class="like-counts">231</p>
+                            </a>
+                            <a class="browse">
+                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                                <p class="browse-counts">111111</p>                            </a>
+                            <a class="comment">
+                                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                                <p class="comment-counts">111111</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!--                右侧内容-->
+            <ul class="right-container"></ul>
+        </div>
+    </div>
+    <!--        左侧fix区-->
+    <div class="clear-fix">
+        <ul>
+            <li>
+                <a href="#">推荐</a>
+            </li>
+            <li>
+                <a href="#">关注</a>
+            </li>
+            <li>
+                <a href="#">Python</a>
+            </li>
+            <li>
+                <a href="#">Java</a>
+            </li>
+            <li>
+                <a href="#">前端</a>
+            </li>
+            <li>
+                <a href="#">架构</a>
+            </li>
+            <li>
+                <a href="#">区块链</a>
+            </li>
+            <li>
+                <a href="#">数据库</a>
+            </li>
+            <li>
+                <a href="#">游戏开发</a>
+            </li>
+            <li>
+                <a href="#">移动开发</a>
+            </li>
+            <li>
+                <a href="#">运维</a>
+            </li>
+            <li>
+                <a href="#">人工智能</a>
+            </li>
+            <li>
+                <a href="#">安全</a>
+            </li>
+            <li>
+                <a href="#">云计算/大数据</a>
+            </li>
+            <li>
+                <a href="#">研发管理</a>
+            </li>
+            <li>
+                <a href="#">物联网</a>
+            </li>
+            <li>
+                <a href="#">计算机基础</a>
+            </li>
+            <li>
+                <a href="#">音视频开发</a>
+            </li>
+            <li>
+                <a href="#">其他</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+<script src="../js/jquery.js"></script>
+<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>-->
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../js/ajaxData.js"></script>
+<script src="../js/manageCookie.js"></script>
+<script src="../js/userHome.js"></script>
+
+
+</body>
+</html>

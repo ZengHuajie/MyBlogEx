@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../ueditor-1.4.3.3/themes/default/_css/ueditor.css">
+    <link rel="stylesheet" href="../css/writeBlog.css">
+    <style>
+        /*.title {*/
+        /*    color:red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+    <div class="title">标题:</div>
+    <input type="text" name="inp" class="inp">
+<!-- 加载编辑器的容器 -->
+    <div id="container" name="content"></div>
+
+    <div class="wrapper">
+        <h1></h1>
+        <p></p>
+    </div>
+    <form class="form-blog" method="post" action="">
+        <input type="hidden"  class="blog-account" id="blog-account" name="blog-account">
+        <input type="hidden" class="blog-title" id="blog-title" name="blog-title">
+        <input type="hidden" class="blog-content" id="blog-content" name="blog-content">
+        <button type="submit" class="btn">发表</button>
+    </form>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../ueditor-1.4.3.3/ueditor.config.js"></script>
+    <script src="../ueditor-1.4.3.3/ueditor.all.js"></script>
+    <script src="../js/ajaxData.js"></script>
+    <script src="../js/manageCookie.js"></script>
+    <script src="../js/writeBlog.js"></script>
+
+</body>
+</html>

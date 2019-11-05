@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root,
+  body {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  //导航栏
+  header {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 99;
+
+    .navbar.navbar-default {
+      background-color: #021523;
+      border: none;
+      border-radius: 0;
+
+      .container-fluid {
+        padding-left: 30px;
+        li {
+          margin-left: 10px;
+
+          .glyphicon {
+            font-size: 14px;
+          }
+
+        }
+        a {
+          font-size: 16px;
+          color: #fff;
+        }
+        a:hover {
+          color: #f40;
+          background: #021523;
+        }
+        a:focus {
+          background: #021523;
+        }
+        .dropdown-menu {
+          background: #021523;
+
+          li {
+            a{
+              color: #fff;
+            }
+            a:hover {
+              color: #f40;
+            }
+          }
+
+        }
+
+        .navbar-right {
+          height: 50px;
+
+          .user {
+            display: flex;
+            padding-left: 10px;
+            width: 100px;
+            height: 50px;
+            color: #fff;
+            font-size: 12px;
+            //border: 1px solid #fff;
+
+            a {
+              margin-left: 5px;
+              height: 100%;
+              line-height: 50px;
+              text-align: center;
+              text-decoration: none;
+            }
+            a:hover {
+              background-color: transparent;
+              color: #f40;
+            }
+            .sx:hover {
+              color: #fff;
+              cursor: default;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  //背景墙
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    top: 50px;
+    background-color: #ddd;
+
+    //注册区域
+    .register {
+      position: absolute;
+      top: calc(50% - 205px);
+      right: 20%;
+      width: 300px;
+      height: 410px;
+      background: rgba(0,0,0, .3);
+      //注册头部
+      .register-head {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 10px auto;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+
+        .register-head-title {
+          position: absolute;
+          left: calc(50% - 35px);
+          width: 70px;
+          height: 100%;
+          text-align: center;
+          line-height: 50px;
+          cursor: pointer;
+          color: #ddd;
+        }
+        .register-head-title:hover {
+          color: #f40;
+        }
+
+      }
+
+      //注册内容区
+      .register-content {
+
+        margin: 30px auto;
+        width: 220px;
+        height: 200px;
+        color: #fff;
+
+        form {
+
+          .form-group {
+            margin-bottom: 30px;
+          }
+
+          .btn-default {
+            width: 100%;
+            height: 40px;
+            background-color: #021523;
+            color: #fff;
+            border: none;
+            outline: none;
+          }
+          .btn-default:hover {
+            color: #f40;
+          }
+        }
+
+        .form-phone {
+          display: none;
+        }
+
+      }
+
+      //注册底部
+      .register-bottom {
+        margin: 0 auto;
+        width: 220px;
+        height: 80px;
+
+        .partner {
+          font-size: 12px;
+          color: #fff;
+        }
+        .partner-content {
+          margin-top: 20px;
+          padding: 0 10px;
+
+          span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-left: 25px;
+            cursor: pointer;
+          }
+
+          .tecent {
+            background: url("../images/tecent.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .weibo {
+            background: url("../images/weibo.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .wechat {
+            background: url("../images/wechat.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+
+        }
+
+
+      }
+
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #000;
+      background: url('../images/banner.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+
+  }
+
+  //底部栏
+  .foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #021523;
+
+    .foot-left {
+      position: relative;
+      top: 10px;
+      width: 70%;
+      height: 90px;
+      color: #fff;
+      //overflow: hidden;
+      //border: 1px solid #fff;
+
+      .ul1 {
+        position: absolute;
+        left: 200px;
+        line-height: 30px;
+      }
+      .ul2 {
+        position: absolute;
+        left: 300px;
+        line-height: 30px;
+      }
+
+
+    }
+
+  }
+
+
+
+}
+
+@media screen and (min-width: 760px) {
+  .user {
+    position: absolute;
+    right: 200px;
+  }
+}
